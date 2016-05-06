@@ -332,7 +332,18 @@ div[data-page="about"] .about-content {
 }
 
 .nav-list.social-media li {
+    transition: all 1s;
     color: #444;
+    font-weight: 600;
+}
+
+.nav-list.social-media li:hover {
+    border-color: #777;
+}
+
+.nav-list.social-media li:hover i:before {
+    color: #E48929;
+    transition: all 0.75s;
 }
 
 .nav-list li i:before {
@@ -393,9 +404,11 @@ i.fa { font: normal normal normal 14px/1; }
         margin-bottom: 2%;
         background-color: black;
         width: 49%;
+        transition: opacity 0.75s;
     }
     .project-wrapper img {
         opacity: 1;
+        transition: opacity 0.75s;
     }
     .project-wrapper:hover img {
         opacity: 0.3;
@@ -412,10 +425,10 @@ i.fa { font: normal normal normal 14px/1; }
         opacity: 0;
         z-index: 99;
         color: white;
+        transition: opacity 0.75s;
     }
     .project-wrapper:hover .text-wrapper {
         opacity: 1;
-        transition: opacity 0.75s;
     }
     .header-text {
         text-transform: capitalize;
