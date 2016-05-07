@@ -58,6 +58,11 @@ a.underline {
 
 .selected, .selected a { color: #E48929; font-weight: 600;}
 
+b {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -204,9 +209,11 @@ h1.title {
     text-align: center;
     width: 100%;
     max-width: 600px;
-    margin: 0 auto 1em;
+    margin: 1em auto 1em;
     font-weight: bold;
 }
+
+div[data-page="about"] h1.title { margin: 0 auto 1em; }
 
 .tab-nav ul {
     display: table;
